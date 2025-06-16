@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KARAN SINGH | Portfolio</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Poppins', sans-serif; background: #fafafa; color: #333; }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+    section { padding: 120px 0 60px; margin-top: -60px; }
+    h2 { text-align: center; font-weight: 600; margin-bottom: 40px; position: relative; }
+    h2::after { content: ''; width: 60px; height: 4px; background: #007bff; display: block; margin: 8px auto 0; border-radius: 2px; }
+
+    /* Header */
+    header { background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); color: #fff; padding: 20px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+    header .container { display: flex; align-items: center; justify-content: space-between; }
+    header h1 { margin: 0; font-size: 1.8rem; font-weight: 700; }
+    nav { display: flex; align-items: center; }
+    nav a { margin: 0 15px; font-weight: 500; transition: color 0.3s; }
+    nav a:hover { color: #ffd700; }
+
+    /* Section Backgrounds */
+    #about, #projects, #contact { background: #fff; }
+    #skills, #resume { background: #f4f7fa; }
+
+    /* About */
+    #about img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 20px; border: 4px solid #007bff; }
+    #about p { max-width: 700px; margin: 0 auto; text-align: center; color: #555; font-weight: 300; line-height: 1.6; }
+
+    /* Skills */
+    #skills ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; padding: 0; margin: 0; }
+    #skills li { background: #007bff; color: #fff; padding: 12px 20px; margin: 8px; border-radius: 50px; font-size: 0.9rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    #skills li:hover { transform: translateY(-5px); }
+
+    /* Projects */
+    .project { display: flex; flex-wrap: wrap; margin-bottom: 40px; background: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s; }
+    .project:hover { transform: translateY(-5px); }
+    .project img { width: 100%; max-width: 300px; height: 200px; object-fit: cover; }
+    .project-content { padding: 20px; flex: 1; }
+    .project-content h3 { margin-top: 0; color: #007bff; }
+    .project-content p { color: #666; line-height: 1.6; }
+
+    /* Button */
+    .btn { display: inline-block; padding: 12px 24px; border-radius: 30px; background: #007bff; color: #fff; margin-top: 20px; font-weight: 500; transition: background 0.3s, transform 0.3s; }
+    .btn:hover { background: #0056b3; transform: translateY(-3px); }
+
+    /* Footer */
+    footer { text-align: center; padding: 20px 0; background: #333; color: #fff; font-size: 0.9rem; }
+    footer p { margin: 0; }
+
+    /* Contact Section */
+    #contact { text-align: center; }
+    #contact p { margin: 10px 0; }
+    #contact a { color: #007bff; transition: color 0.3s; }
+    #contact a:hover { color: #0056b3; }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header .container { flex-direction: column; gap: 20px; }
+      nav { flex-wrap: wrap; justify-content: center; }
+      nav a { margin: 5px 10px; }
+      .project { flex-direction: column; }
+      .project img { max-width: 100%; }
+      section { padding: 80px 0 40px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>KARAN SINGH</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="https://drive.google.com/uc?export=download&id=16pXy7gcgd0Y17-R5lJT7Noix6QcCrgNr" class="btn" target="_blank">Download Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="WhatsApp%20Image%202025-06-16%20at%2000.36.18.jpeg" alt="KARAN SINGH" onerror="this.style.display='none'">
+      <p>Hi, I'm KARAN SINGH, a passionate web developer with expertise in HTML, CSS, JavaScript, and React. Adept at creating responsive, user-friendly interfaces and solving complex problems with clean, maintainable code. Strong design sensibility backed by solid problem-solving skills.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li><li>React</li><li>Redux</li><li>Responsive Design</li><li>Git</li><li>GitHub</li><li>RESTful APIs</li><li>AJAX</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="https://via.placeholder.com/300x200/007bff/ffffff?text=Portfolio+Website" alt="Portfolio Website">
+        <div class="project-content">
+          <h3>Portfolio Website</h3>
+          <p>Developed a personal portfolio showcasing projects and skills using HTML, CSS, and JS. Implemented responsive layouts and smooth scrolling navigation with modern design principles.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/300x200/28a745/ffffff?text=Todo+App" alt="Todo App">
+        <div class="project-content">
+          <h3>Todo App</h3>
+          <p>Built a React-based todo application with CRUD operations and local storage persistence. Integrated filters and dynamic UI updates for enhanced user experience.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <div style="text-align: center;">
+        <p>Download my resume to learn more about my experience and qualifications.</p>
+        <a href="https://drive.google.com/uc?export=download&id=18rwng1GTtx3IYMI1iHP61lIJ4HQatlv3" class="btn" target="_blank">Download PDF Resume</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:karansg002@gmail.com">karansg002@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+917986772204">+91 79867 72204</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/karansingh008" target="_blank">github.com/karansingh008</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/karan-singh-80297b322" target="_blank">linkedin.com/in/karan-singh-80297b322</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 KARAN SINGH. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
